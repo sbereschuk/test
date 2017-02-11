@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Untitled Document</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/cusel.css" rel="stylesheet" type="text/css" />
+		<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+		
+        <script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script type="text/javascript" src="js/jquery.carouFredSel-6.2.0-packed.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+        <script type="text/javascript" src="js/cusel-min-2.3.1.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	</head>
+	
+	<body>
+	
+		<div class="header clearfix">
+			<div class="wrapper">
+				<div class="logo"><a href="#"><img src="images/logo.png" alt="" /></a></div>
+				<a href="#" class="top-button">Регистрация</a>
+				<a href="#vhod" id="login" class="top-button">Вход для клиентов</a>
+				<a href="#" class="support">
+					Саппорт
+					<p>онлайн</p>
+				</a>
+				<div class="calc"><a href="#">Калькулятор хостинга</a></div>
+			</div>
+		</div><!-- END .header -->
+		
+		<div class="top">
+			<div class="wrapper">
+				<ul class="menu">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Хостинг</a></li>
+					<li><a href="#">Домен</a>
+						<div class="submenu">
+							<ul>
+								<li><a href="#">Тарифные планы</a></li>
+								<li><a href="#">Что такое хостинг</a></li>
+								<li><a href="#">Перенос сайта</a></li>
+								<li><a href="#">Тест хостинга</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Сервера</a></li>
+					<li><a href="#">Помощь</a></li>
+					<li><a href="#">Поддержка</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="slider">
+			<div class="wrapper">
+				<ul id="slider">
+					<li>
+						<div class="slide-pic"><a href="#"><img src="images/slide.png" alt="" /></a></div>
+						<div class="slide-text">
+							Перенос сайта
+							<p class="f69">БЕСПЛАТНО!</p>
+							<a href="#" class="slide-more">Узнать больше</a>
+						</div>
+					</li>
+					<li>
+						<div class="slide-pic"><a href="#"><img src="images/slide.png" alt="" /></a></div>
+						<div class="slide-text">
+							Перенос gсайта
+							<p class="f69">БЕСПЛАТНО!</p>
+							<a href="#" class="slide-more">Узнать больше</a>
+						</div>
+					</li>
+					<li>
+						<div class="slide-pic"><a href="#"><img src="images/slide.png" alt="" /></a></div>
+						<div class="slide-text">
+							Перенос wwсайта
+							<p class="f69">БЕСПЛАТНО!</p>
+							<a href="#" class="slide-more">Узнать больше</a>
+						</div>
+					</li>
+				</ul>
+				<div class="bullets" id="bullets"></div>
+			</div>
+		</div>
+		
+		<div class="ribbon-out">
+			<div class="wrapper">
+				<div class="ribbon">
+					<div class="ribbon-in">
+						<div class="www">www</div>
+						<div class="url">
+							<div class="tooltip js_hide"><div class="tooltip-in">
+								<p>Домен <a href="#">testeressselling.biz</a> свободен!</p>
+								<p>Домен <a href="#">testeressselling.biz</a> свободен!</p>
+							</div></div>
+							<input type="text" placeholder="Введите имя домена" name="name" class="url-inp" />
+						</div>
+						<div class="checkboxes" id="domens">
+							<div class="check"><span class="niceCheck"><input type="checkbox" name="ru" /></span>Ru</div>
+							<div class="check"><span class="niceCheck"><input type="checkbox" name="biz"  /></span>Biz</div>
+							<div class="check"><span class="niceCheck"><input type="checkbox" name="com"  /></span>Com</div>
+							<div class="check"><span class="niceCheck"><input type="checkbox" name="ua"  /></span>Ua</div>
+							<div class="check"><span class="niceCheck"><input type="checkbox" name="org"  /></span>Org</div>
+							<div class="check"><span class="niceCheck"><input type="checkbox" name="net"  /></span>Net</div>
+						</div>
+						<a href="#" class="check-but">Проверить</a>
+						<div class="links">
+							<a href="#">Цены на домены</a><br />
+							<a href="#">Расширенный поиск</a>
+						</div>
+						<div class="clear"></div>
+						<div class="next" id="next"></div>
+						<div class="prev" id="prev"></div>
+						<div class="title">Тарифные планы</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="tarifs">
+			<div class="wrapper">
+				<ul class="tarif" id="tarif">
+					<li>
+						<div class="tarif-name">Os1</div>
+						<div class="tarif-icon">
+							<ul class="tarif-icon-in">
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="tarif-price">0.88<span>$</span></div>
+						<div class="clear"></div>
+						<ul class="tarif-list">
+							<li>500 mb дискового пространства</li>
+							<li>1 домен</li>
+							<li>Неограниченный трафик</li>
+							<li>Безлимитные  email</li>
+						</ul>
+						<a href="#" class="tarif-more"></a>
+					</li>
+					<li>
+						<div class="tarif-name">2013</div>
+						<div class="tarif-icon">
+							<ul class="tarif-icon-in">
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="tarif-price">1.87<span>$</span></div>
+						<div class="clear"></div>
+						<ul class="tarif-list">
+							<li>500 mb дискового пространства</li>
+							<li>1 домен</li>
+							<li>Неограниченный трафик</li>
+							<li>Безлимитные  email</li>
+						</ul>
+						<a href="#" class="tarif-more"></a>
+					</li>
+					<li>
+						<div class="tarif-name">2013</div>
+						<div class="tarif-icon">
+							<ul class="tarif-icon-in">
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="tarif-price">2.87<span>$</span></div>
+						<div class="clear"></div>
+						<ul class="tarif-list">
+							<li>500 mb дискового пространства</li>
+							<li>1 домен</li>
+							<li>Неограниченный трафик</li>
+							<li>Безлимитные  email</li>
+						</ul>
+						<a href="#" class="tarif-more"></a>
+					</li>
+					<li>
+						<div class="tarif-name">2013</div>
+						<div class="tarif-icon">
+							<ul class="tarif-icon-in">
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="tarif-price">1.87<span>$</span></div>
+						<div class="clear"></div>
+						<ul class="tarif-list">
+							<li>500 mb дискового пространства</li>
+							<li>1 домен</li>
+							<li>Неограниченный трафик</li>
+							<li>Безлимитные  email</li>
+						</ul>
+						<a href="#" class="tarif-more"></a>
+					</li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<div class="wrapper">
+		
+			<div class="size1of3">
+				<div class="feature">
+					<div class="f-title icon1">Качественно</div>
+					<p>Наша фирма предлагает для Ваших сайтов весь спектр интернет-услуг. Мы обеспечиваем стабильную работу, не ограничиваем трафик и базы данных, не ограничиваем в поддоменах. до интернет-магазинов с огромной клиентской базой. </p>
+				</div>
+			</div>
+		
+			<div class="size1of3">
+				<div class="feature">
+					<div class="f-title icon2">Недорого</div>
+					<p>Online поддержка, система скидок, бесперебойный сервер – все это делает наше предложение на хостинг сайтов оптимальным среди других компаний по соотношению цена/качество.</p>
+					<p>Hostia.Ru – это Ваш удачный выбор!</p>
+				</div>
+			</div>
+		
+			<div class="size1of3">
+				<div class="feature">
+					<div class="f-title icon3">С поддержкой PHP</div>
+					<p>Сегодня мы предлагаем технологии с поддержкой php, mysql, email, ssi и т.д. При всем этом сотрудничество с нами не требует больших финансовых вложений. до интернет-магазинов с огромной клиентской базой. Мы гарантируем сервис высокого класса!</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="clients">И уже <span>более 5000</span> клиентов с этим согласны!</div>
+			
+			<div class="tarifs2">
+				<div class="tarif2">
+					<div class="tarif2-price">2.99<span>$</span></div>
+					<p>За домен в зоне <span>RU</span></p>
+				</div>
+				<div class="tarif2">
+					<div class="tarif2-price">2.99<span>$</span></div>
+					<p>За домен в зоне <span>RU</span></p>
+				</div>
+				<div class="tarif2">
+					<div class="tarif2-price">2.99<span>$</span></div>
+					<p>За домен в зоне <span>RU</span></p>
+				</div>
+				<div class="tarif2">
+					<div class="tarif2-price">2.99<span>$</span></div>
+					<p>За домен в зоне <span>RU</span></p>
+				</div>
+				<div class="tarif2">
+					<div class="tarif2-price">2.99<span>$</span></div>
+					<p>За домен в зоне <span>RU</span></p>
+				</div>
+			</div>
+			
+			<div class="all"><a href="#">Все новости</a></div>
+			<div class="title2">Последние новости</div>
+			
+			<div class="news">
+				<div class="new">
+					<div class="date">24.09.2013</div>
+					<div class="new-title"><a href="#">Новый супер хостинг на SSD</a></div>
+					<p>Добрый день! У нас появился новый тариф «Turbo SSD». Я очень переживаю, понравится ли он вам. Мы хотели сделать его самым быстрым.</p>
+					<a href="#">Подробнее</a>
+				</div>
+				<div class="new">
+					<div class="date">24.09.2013</div>
+					<div class="new-title"><a href="#">Новый супер хостинг на SSD</a></div>
+					<p>Добрый день! У нас появился новый тариф «Turbo SSD». Я очень переживаю, понравится ли он вам. Мы хотели сделать его самым быстрым.</p>
+					<a href="#">Подробнее</a>
+				</div>
+				<div class="new">
+					<div class="date">24.09.2013</div>
+					<div class="new-title"><a href="#">Новый супер хостинг на SSD</a></div>
+					<p>Добрый день! У нас появился новый тариф «Turbo SSD». Я очень переживаю, понравится ли он вам. Мы хотели сделать его самым быстрым.</p>
+					<a href="#">Подробнее</a>
+				</div>
+			</div>
+			
+			<div class="article">
+				<div class="title2">Что такое хостинг или хостинг сайтов?</div>
+				<p>Если опустить технические подробности и всякие «умные» термины, то можно сказать, что хостинг – это услуга по предоставлению дома для сайта. Это можно понять и чисто логически, ведь заходя на какой-нибудь сайт вы, как правило, видите там текстовые страницы, изображения, аудио или видеоинформацию – всё это файлы, особым образом представляемые вам в виде веб-страничек. А раз это файлы, значит - они имеют определённый объём и им нужно место для хранения. Само название произошло от английского «host» - основное устройство, главный сервер, узел (есть и альтернативное значение – держатель постоялого двора, именно оно даёт законное основание на сравнение с домом для сайта), а услуга по предоставлению места на «главном сервере» для сайтов назвали (по законам английской грамматики) «Hosting» или в русском варианте написания – хостингом.</p>
+				<p>Физически для хостинга сайтов используется очень мощный компьютер (или даже несколько таких компьютеров), на котором установлено специальное программное обеспечение (web-сервер, базы данных и многое другое), к которому подключён выделенный канал высокоскоростного интернета. Этот сервер работает круглосуточно и именно поэтому интернет-сайты доступны нам в любое время суток. Кто-то может предложить, основываясь на этой информации, самостоятельно сделать себе сервер под хостинг, но, как вы понимаете, это обойдётся вам куда дороже материально и сложнее технически, чем просто приобрести хостинг для сайта у профессионалов своего дела.</p>
+			</div>
+			<div class="right_col">
+				<div class="title2">Отзывы</div>
+				
+				<div class="review">
+					В целом наиболее привлекательный хостинг под реселлинг. Конкурентоспособные тарифы на vps и vds. Отзывчивая техподдержка. Хостинг с большим запасом технических мощностей и человеческих ресурсов, что, безусловно, сулит развитие компании и увеличение благодарных клиентов. Очень рад сотрудничеству)
+				</div>
+				<ul class="rating">
+					<li class="on"></li>
+					<li class="on"></li>
+					<li class="on"></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<div class="user">Jack</div>
+				
+				<div class="review">
+					В целом наиболее привлекательный хостинг под реселлинг. Конкурентоспособные тарифы на vps и vds. Отзывчивая техподдержка. 
+				</div>
+				<ul class="rating">
+					<li class="on"></li>
+					<li class="on"></li>
+					<li class="on"></li>
+					<li class="on"></li>
+					<li></li>
+				</ul>
+				<div class="user">Petro</div>
+			</div>
+			<div class="clear"></div>
+			
+		</div>
+		
+		<div class="footer">
+			<div class="footer-in">
+				<div class="wrapper">
+				
+					<div class="foot-col">
+						<div class="foot-title">Хостинг</div>
+						<ul class="foot-navi">
+							<li><a href="#">Тарифные планы</a></li>
+							<li><a href="#">Что такое хостинг</a></li>
+							<li><a href="#">Перенос сайта</a></li>
+							<li><a href="#">Тест хостинга</a></li>
+						</ul>
+					</div>
+					<div class="foot-col">
+						<div class="foot-title">Домен</div>
+						<ul class="foot-navi">
+							<li><a href="#">Тарифные планы</a></li>
+							<li><a href="#">Что такое хостинг</a></li>
+							<li><a href="#">Перенос сайта</a></li>
+							<li><a href="#">Тест хостинга</a></li>
+						</ul>
+					</div>
+					<div class="foot-col">
+						<div class="foot-title">Сервера</div>
+						<ul class="foot-navi">
+							<li><a href="#">Тарифные планы</a></li>
+							<li><a href="#">Что такое хостинг</a></li>
+						</ul>
+					</div>
+					<div class="foot-col">
+						<div class="foot-title">Помощь</div>
+						<ul class="foot-navi">
+							<li><a href="#">Тарифные планы</a></li>
+							<li><a href="#">Что такое хостинг</a></li>
+							<li><a href="#">Перенос сайта</a></li>
+							<li><a href="#">Тест хостинга</a></li>
+							<li><a href="#">Что такое хостинг</a></li>
+							<li><a href="#">Перенос сайта</a></li>
+							<li><a href="#">Тест хостинга</a></li>
+						</ul>
+					</div>
+					<div class="foot-col">
+						<div class="foot-title">Поддержка</div>
+						<ul class="foot-navi">
+							<li><a href="#">Тарифные планы</a></li>
+							<li><a href="#">Что такое хостинг</a></li>
+							<li><a href="#">Перенос сайта</a></li>
+							<li><a href="#">Тест хостинга</a></li>
+							<li><a href="#">Тарифные планы</a></li>
+							<li><a href="#">Что такое хостинг</a></li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="footer2">
+					<div class="wrapper">
+						<div class="counter">
+							<img src="images/counter1.png" alt="" />
+							<img src="images/counter2.png" alt="" />
+							<img src="images/counter3.png" alt="" />
+						</div>
+						<div class="copy">Все права защищены  Copyright © 2007-2014</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="vhod" class="popup js_hide">
+			<div class="popup-title">
+				<div class="close"></div>
+				Вход
+			</div>
+			<div class="popup-inner">
+				<div class="row">
+					<select name="" class="select">
+						<option value="0">Вход на хостинг</option>
+						<option value="1">Вход в биллинг</option>
+					</select>
+				</div>
+				<div class="row">
+					<div class="input"><input type="text" name="" placeholder="Логин" class="inp" /></div>
+				</div>
+				<div class="row">
+					<div class="input"><input type="text" name="" placeholder="Пароль" class="inp" /></div>
+				</div>
+				<div class="links2">
+					<a class="fr" href="#">Забыли пароль?</a>
+					<a href="#">Регистрация</a>
+				</div>
+				<input type="submit" value="Вход" class="sub" />
+			</div>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {
+    "sftp-webpack-plugin": "^0.2.3",
+    "webpack": "^2.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sbereschuk/test.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "s.bereschuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sbereschuk/test/issues"
+  },
+  "homepage": "https://github.com/sbereschuk/test#readme"
+}
