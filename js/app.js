@@ -1,3 +1,9 @@
+require('./jquery-1.6.4.min.js');
+require('./jquery-ui-1.10.3.custom.min.js');
+require('./jquery.fancybox.pack.js');
+require('./jquery.carouFredSel-6.2.0-packed.js');
+require('./cusel-min-2.3.1.js');
+
 var app = {
 				
 		init: function(){
