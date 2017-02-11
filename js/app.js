@@ -1,4 +1,4 @@
-﻿var app = {
+var app = {
 				
 		init: function(){
 			this.carousels();
